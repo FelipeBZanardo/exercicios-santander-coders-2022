@@ -6,7 +6,7 @@ Utilizar enum
 Criar um valor para cada mês*/
 
 /*Comentários sobre o exercício:
-* Não achei necessário o uso do if/switch na resolução do exercício como comnetado em aula
+* Não achei necessário o uso do if/switch na resolução do exercício como comentado em aula
 * O enum "Ano" já contém os valores dos gastos de cada mês.
 * E esses valores podem ser acessados através do método .getValor()
 * O usuário entra com o nome do mês. Se esse mês não existir (digitado errado),

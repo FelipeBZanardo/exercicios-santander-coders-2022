@@ -8,10 +8,10 @@ Resultado: !João !Maria !da !Silva*/
 
 /*Comentários sobre o exercício:
  * A resolução prevê que o nome digitado pelo usuário está sem excessos de espaços entre as palavras.
- * Caso isso aconteça, irá aparecer no resultado mais aparições do ponto de exclamação.
+ * Caso isso aconteça, irá aparecer no resultado mais pontos de exclamação.
  * Para corrigir esse erro, basta descomentar a linha 25 e comentar a linha 26:
  *   ela substitui qualquer aparição de espaço, inclusive vários espaços seguidos,
- *   por " !";*/
+ *   por " !"*/
 
 import java.util.Scanner;
 
