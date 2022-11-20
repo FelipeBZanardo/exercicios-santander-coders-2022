@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Menu {
     Carrinho carrinho = new Carrinho();
+    static Scanner scanner = new Scanner(System.in);
     public void iniciarMenu(){
         System.out.println("****\tCARRINHO DE COMPRAS\t****\n");
 
@@ -14,6 +15,7 @@ public class Menu {
             if (!this.continuarAdicionandoProduto()){
                 this.carrinho.imprimirLista();
                 System.out.println("Fim do programa");
+                scanner.close();
                 break;
             }
         }
@@ -21,11 +23,11 @@ public class Menu {
     }
 
     public boolean continuarAdicionandoProduto(){
-        Scanner scanner = new Scanner(System.in);
         char resposta = 'N';
         while(true){
             System.out.print("Deseja continuar comprando: [S/N] ");
             resposta = scanner.next().trim().toUpperCase().charAt(0);
+            scanner.nextLine();
             if (resposta == 'S'){
                 return true;
             } else if (resposta == 'N') {
@@ -37,13 +39,12 @@ public class Menu {
     }
 
     public static String receberNomeProduto(){
-        Scanner scanner = new Scanner(System.in);
+
         System.out.print("Digite o nome do produto: ");
         return scanner.nextLine();
     }
 
     public static int receberQuantidadeProduto(){
-        Scanner scanner = new Scanner(System.in);
 
         int quantidade = 0;
         while(true){
@@ -59,7 +60,6 @@ public class Menu {
     }
 
     public static double receberPrecoProduto(){
-        Scanner scanner = new Scanner(System.in);
 
         double preco = 0;
         while(true){
