@@ -23,10 +23,7 @@ public class Produto {
 
     @Override
     public String toString() {
-        return String.format("Produto{" +
-                "nome='" + nome + '\'' +
-                ", quantidade=" + quantidade +
-                ", preco=" + "%.2f" +
-                '}',preco);
+        return String.format("%-20s %-20d %-20.2f %-20.2f",
+                this.nome, this.quantidade, this.preco, this.preco * this.quantidade);
     }
 }

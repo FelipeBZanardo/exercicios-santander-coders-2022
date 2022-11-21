@@ -36,9 +36,7 @@ public class Carrinho {
         double soma = 0d;
         for(Produto produto : listaProdutos){
             soma += produto.getPreco() * produto.getQuantidade();
-            System.out.printf("%-20s %-20d %-20.2f %-20.2f\n",
-                    produto.getNome(), produto.getQuantidade(), produto.getPreco(),
-                    produto.getPreco() * produto.getQuantidade());
+            System.out.println(produto.toString());
         }
         System.out.printf("\n\u001B[32mTotal R$%.2f\u001B[0m\n",soma);
     }
